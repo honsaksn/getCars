@@ -6,13 +6,13 @@ from datetime import timedelta
 import traceback
 import json 
 
-import Db_Mgr
-import get_cars_dto
+import dbMgr
+import getCarsDto
 
 class getCars:
 
     def __init__(self):
-        self.get_cars_dto = get_cars_dto.getCarsDTO()
+        self.get_cars_dto = getCarsDto.getCarsDTO()
 
     def get_conn(self, url):
         try:
